@@ -2,7 +2,7 @@
 alias welcome='echo "Welcome $USER."'
 alias compi_lib='gcc -c -Wall -Wextra -Werror *.c && echo "Norminette :" && rm ./*.o && normi'
 alias compi_run='gcc  -Wall -Wextra -Werror *.c && echo "Norminette :" && normi && ./a.out | cat -e && echo "\nCompilado, ejecutado y borrado, $USER" && rm ./a.out'
-alias normi='norminette -R CheckForbiddenSourceHeader *c'
+alias normi='norminette -R CheckForbiddenSourceHeader'
 alias reload='vim ~/Documents/alias/alias && source ~/Documents/alias/alias'
 alias ll='ls -lahG '
 alias tree="find . -path ./.git -prune -o -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
