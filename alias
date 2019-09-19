@@ -5,4 +5,4 @@ alias compi_run='gcc  -Wall -Wextra -Werror *.c && echo "Norminette :" && normi 
 alias normi='norminette -R CheckForbiddenSourceHeader'
 alias reload='vim ~/Documents/alias/alias && source ~/Documents/alias/alias'
 alias ll='ls -lahG '
-alias tree="find . -path ./.git -prune -o -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias tree="find . -not -path '*/\.g*' -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
