@@ -6,4 +6,5 @@ alias compi_run_keep='gcc  -Wall -Wextra -Werror *.c && echo "Norminette :" && n
 alias normi='norminette -R CheckForbiddenSourceHeader'
 alias reload='vim ~/Documents/alias/alias && source ~/Documents/alias/alias'
 alias ll='ls -lahG '
-alias tree="find . -not -path '*/\.git/*' -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias tree="pwd && find . -not -path '*/\.git/*' -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias gitpush="git add . && git commit -m 'cambios menores' && git push"
