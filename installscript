@@ -1,2 +1,2 @@
-#/vim/bash
+#!/vim/bash
 ln ./alias ~/.zshrc
