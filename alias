@@ -4,20 +4,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/aykot/.oh-my-zsh"
 
-
-#Custom Alias
-alias welcome='echo "Welcome $USER."'
-alias compi_lib='gcc -c -Wall -Wextra -Werror *.c && echo "Norminette :" && rm ./*.o && normi'
-alias compi_run='gcc  -Wall -Wextra -Werror *.c && echo "Norminette :" && normi && ./a.out | cat -e && echo "\nCompilado, ejecutado y borrado, $USER" && rm ./a.out'
-alias compi_run_keep='gcc  -Wall -Wextra -Werror *.c && echo "Norminette :" && normi && echo "\nCompilado, $USER"'
-alias normi='norminette -R CheckForbiddenSourceHeader'
-alias reload='vim ~/.zshrc && source ~/.zshrc'
-alias ll='ls -lah'
-alias tree="pwd && find . -not -path '*/\.git/*' -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias gitpush="git add . && git commit -m 'cambios menores' && git push"
-
-#End of Custom Alias
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -112,6 +98,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#Custom Alias
+alias welcome='echo "Welcome $USER."'
+alias compi_lib='gcc -c -Wall -Wextra -Werror *.c && echo "Norminette :" && rm ./*.o && normi'
+alias compi_run='gcc  -Wall -Wextra -Werror *.c && echo "Norminette :" && normi && ./a.out | cat -e && echo "\nCompilado, ejecutado y borrado, $USER" && rm ./a.out'
+alias compi_run_keep='gcc  -Wall -Wextra -Werror *.c && echo "Norminette :" && normi && echo "\nCompilado, $USER"'
+alias normi='norminette -R CheckForbiddenSourceHeader'
+alias reload='vim ~/.zshrc && source ~/.zshrc'
+alias ll='ls -lah'
+alias tree="pwd && find . -not -path '*/\.git/*' -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias gitpush="git add . && git commit -m 'cambios menores' && git push"
+#End of Custom Alias
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
