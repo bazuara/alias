@@ -1,2 +1,2 @@
 #!/vim/bash
-ln ./alias ~/.zshrc
+ln ./alias.zsh ~/.oh-my-zsh/custom/alias.zsh
