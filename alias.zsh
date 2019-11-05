@@ -8,7 +8,7 @@ alias up='cd .. && ll'
 alias reload='vim ~/.oh-my-zsh/custom/alias.zsh && source ~/.oh-my-zsh/custom/alias.zsh'
 alias ll='ls -lah'
 alias tree="pwd && find . -not -path '*/\.git/*' -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias gitpush="git add . && git commit -m 'cambios menores' && git push"
+alias gp="git add . && git commit -m 'Subida automática' && git push"
 alias cd42='cd ~/Documents/42/Escuela/'
 function mkcd() { mkdir -p "$@" && cd "$@"; }
 #End of Custom Alias
