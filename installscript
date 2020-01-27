@@ -1,2 +1,3 @@
 #!/bin/bash
 ln ./alias.zsh ~/.oh-my-zsh/custom/alias.zsh
+ln ./.zshrc ~/.zshrc
