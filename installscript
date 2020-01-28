@@ -15,6 +15,6 @@ git config --global core.excludesfile ~/.gitignore_global
 ln ./.gitignore_global ~/.gitignore_globalq
 # Instala las fuentes
 cp ./font/*.ttf ~/Library/Fonts
-# pide al usuario que presione una tecla para cerar terminal
+# instala preferencia de iTerm2
 echo "No te olvides de reiniciar el terminal para aplicar todos los cambios"
 exit 0
