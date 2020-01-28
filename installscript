@@ -1,6 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    installscript                                      :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
+#    Updated: 2020/01/28 18:48:40 by bazuara          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 #!/bin/bash
 cat ./sources/ascii.art
-#install vim preferences
+# press a key to continue
+read -p ""
+# install vim preferences
 ln ./sources/.vimrc ~/.vimrc
 # instalar oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
