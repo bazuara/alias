@@ -14,7 +14,7 @@ cat ./sources/ascii.art
 # press a key to continue
 read -p ""
 # install vim preferences
-ln ./sources/.vimrc ~/.vimrc
+ln ./sources/vimrc ~/.vimrc
 # instalar oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # instalar tema over10k
@@ -22,9 +22,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 #alias a la carpeta de oh-my-zsh
 ln ./sources/alias.zsh ~/.oh-my-zsh/custom/alias.zsh
 # general config oh-my-zsh
-ln ./sources/.zshrc ~/.zshrc
+ln ./sources/zshrc ~/.zshrc
 # configura ignore global
-ln ./sources/.gitignore_global ~/.gitignore_globalq
+ln ./sources/gitignore_global ~/.gitignore_globalq
 git config --global core.excludesfile ~/.gitignore_global
 # Instala las fuentes
 cp ./sources/font/*.ttf ~/Library/Fonts
