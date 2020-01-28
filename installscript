@@ -1,3 +1,18 @@
 #!/bin/bash
+cat ./ascii.art
+#install vim preferences
+ln ./.vimrc ~/.vimrc
+# instalar oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# instalar tema over10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+#alias a la carpeta de oh-my-zsh
 ln ./alias.zsh ~/.oh-my-zsh/custom/alias.zsh
+# general config oh-my-zsh
 ln ./.zshrc ~/.zshrc
+# configura ignore global
+git config --global core.excludesfile ~/.gitignore_global
+ln ./.gitignore_global ~/.gitignore_globalq
+# pide al usuario que presione una tecla para cerar terminal
+echo "No te olvides de reiniciar el terminal para aplicar todos los cambios"
+exit 0
