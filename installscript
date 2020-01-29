@@ -6,7 +6,7 @@
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/01/28 18:48:40 by bazuara          ###   ########.fr        #
+#    Updated: 2020/01/29 13:43:46 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -31,5 +31,7 @@ cp ./sources/font/*.ttf ~/Library/Fonts
 # Cambia el desplazamiento del raton a no natural
 defaults write ~/Library/Preferences/.GlobalPreferences.plist com.apple.swipescrolldirection -boolean NO
 # instala preferencia de iTerm2
+# set wallpaper
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/bazuara/.custom/alias/sources/metropolis.png"'
 echo "No te olvides de reiniciar el terminal para aplicar todos los cambios"
 exit 0
