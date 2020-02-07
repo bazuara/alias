@@ -23,6 +23,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 ln ./sources/.alias.zsh ~/.oh-my-zsh/custom/alias.zsh
 # general config oh-my-zsh
 ln ./sources/.zshrc ~/.zshrc
+# plugins ohmyzsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # configura ignore global
 ln ./sources/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
