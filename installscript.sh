@@ -15,6 +15,8 @@ cat ./sources/ascii.art
 read -p ""
 # install vim preferences
 ln ./sources/.vimrc ~/.vimrc
+ln -s ./sources/.vim ~/.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # instalar oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # instalar tema over10k
@@ -28,6 +30,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # configura ignore global
 ln ./sources/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+#instala script de github propio
+ln ./sources/mygit.sh ~/.mygit.sh
 # Instala las fuentes
 cp ./sources/font/*.ttf ~/Library/Fonts
 # Cambia el desplazamiento del raton a no natural
@@ -37,6 +41,8 @@ defaults delete com.googlecode.iterm2
 rm ~/Library/Preferences/com.googlecode.iterm2.plist
 ln ./sources/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 defaults read -app iTerm > /dev/null
+# instala script de música
+ln ./sources/applemusic.applescript ~/.applemusic.applescript
 # set wallpaper
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/bazuara/.custom/alias/sources/metropolis.png"'
 echo "No te olvides de reiniciar el terminal para aplicar todos los cambios"

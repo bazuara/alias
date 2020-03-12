@@ -8,6 +8,7 @@ alias gaut="git add . && git commit && git push"
 alias gs="git status"
 alias cd42='cd ~/Documents/42/Ecole/ft_printf/bazuara'
 alias cdtool='cd ~/Documents/42/Tools/'
+alias deploy-mygit='cp ~/.mygit.sh ./mygit.sh && ./mygit.sh'
 alias mygit='git --git-dir=.github'
 alias mygaut=" mygit add . && mygit commit  && mygit push"
 function mkcd() { mkdir -p "$@" && cd "$@"; }
