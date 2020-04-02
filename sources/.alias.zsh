@@ -13,5 +13,5 @@ alias mygit='git --git-dir=.github'
 alias mygaut=" mygit add . && mygit commit  && mygit push"
 function mkcd() { mkdir -p "$@" && cd "$@"; }
 #End of Custom Alias
-
+alias normi='~/.norminette/norminette.rb'
 
