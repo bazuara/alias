@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    installscript                                      :+:      :+:    :+:    #
+#    installscript.sh                                   :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/01/29 14:58:20 by bazuara          ###   ########.fr        #
+#    Updated: 2020/04/02 14:56:43 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -15,7 +15,7 @@ cat ./sources/ascii.art
 read -p ""
 # install vim preferences
 ln ./sources/.vimrc ~/.vimrc
-ln -s ./sources/.vim ~/.vim
+#ln -s ./sources/.vim ~/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # instalar oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
