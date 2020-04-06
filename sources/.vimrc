@@ -1,4 +1,4 @@
-"PLUGINS
+"" PLUGINS {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -16,27 +16,37 @@ Plugin 'pandark/42header.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+"" }}}
 
-"VISUAL SETTINGS
+"" VISUAL SETTINGS {{{
 syntax on
 set number
 set hlsearch
+"" }}}
 
-"COLLAPSIBLE CODE
+"" COLLAPSIBLE CODE {{{
 set foldmethod=syntax
 set foldnestmax=1
+""" }}}
 
-"KEYBOARD SHORTCUTS
+""KEYBOARD SHORTCUTS {{{
 :nmap <C-N><C-N> :set invnumber<CR>
 :set listchars=tab:▒░,trail:▓
 :nmap <C-M><C-M> :set invlist<CR>
+"" }}}
 
-"INDENTATION
+"" INDENTATION {{{
 set cindent
 set tabstop=4
 set shiftwidth=4
+"" }}}
 
-"42-HEADER CONFIG
+"" 42-HEADER CONFIG {{{
 let $USER = 'bazuara'
 let $MAIL = $USER . '@student.42madrid.com'
+"" }}}
+
+if @% == "~/.vimrc"
+	set foldmethod=marker
+endif
 
