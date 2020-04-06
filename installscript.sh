@@ -6,7 +6,7 @@
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/04/06 19:44:09 by bazuara          ###   ########.fr        #
+#    Updated: 2020/04/06 19:54:33 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -30,8 +30,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # configura ignore global
 ln ./sources/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
-#instala script de github propio
-ln ./sources/mygit.sh ~/.mygit.sh
+# instala script de github propio
+# ln ./sources/mygit.sh ~/.mygit.sh
 # Instala las fuentes
 cp ./sources/font/*.ttf ~/Library/Fonts
 # Cambia el desplazamiento del raton a no natural
