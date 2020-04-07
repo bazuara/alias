@@ -46,7 +46,7 @@ let $USER = 'bazuara'
 let $MAIL = $USER . '@student.42madrid.com'
 "" }}}
 
-if @% == "~/.vimrc"
+if expand('%:t') == ".vimrc"
 	set foldmethod=marker
 endif
 
