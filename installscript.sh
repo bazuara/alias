@@ -6,7 +6,7 @@
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/04/06 19:54:33 by bazuara          ###   ########.fr        #
+#    Updated: 2020/04/09 02:33:13 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -30,6 +30,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # configura ignore global
 ln ./sources/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+# configura git author
+ln -s ./sources/.gitconfig ~/.gitconfig
 # instala script de github propio
 # ln ./sources/mygit.sh ~/.mygit.sh
 # Instala las fuentes
@@ -45,5 +47,5 @@ defaults read -app iTerm > /dev/null
 ln ./sources/applemusic.applescript ~/.applemusic.applescript
 # set wallpaper
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/bazuara/.custom/alias/sources/metropolis.png"'
-echo "No te olvides de reiniciar el terminal para aplicar todos los cambios"
+echo "No te olvides de reiniciar el terminal para aplicar todos los cambios \n Restaura tu ssh key o genera una nueva"
 exit 0
