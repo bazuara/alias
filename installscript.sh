@@ -6,7 +6,7 @@
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/04/09 02:33:13 by bazuara          ###   ########.fr        #
+#    Updated: 2020/04/09 02:52:46 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -31,7 +31,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ln ./sources/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 # configura git author
-ln -s ./sources/.gitconfig ~/.gitconfig
+ln ./sources/.gitconfig ~/.gitconfig
 # instala script de github propio
 # ln ./sources/mygit.sh ~/.mygit.sh
 # Instala las fuentes

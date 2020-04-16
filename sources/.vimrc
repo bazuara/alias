@@ -1,3 +1,19 @@
+"        ________ ++     ________
+"       /VVVVVVVV\++++  /VVVVVVVV\
+"       \VVVVVVVV/++++++\VVVVVVVV/
+"        |VVVVVV|++++++++/VVVVV/'
+"        |VVVVVV|++++++/VVVVV/'
+"       +|VVVVVV|++++/VVVVV/'+
+"     +++|VVVVVV|++/VVVVV/'+++++
+"   +++++|VVVVVV|/VVVVV/'+++++++++
+"     +++|VVVVVVVVVVV/'+++++++++
+"       +|VVVVVVVVV/'+++++++++
+"        |VVVVVVV/'+++++++++
+"        |VVVVV/'+++++++++
+"        |VVV/'+++++++++
+"        'V/'   ++++++
+"                 ++
+
 "" PLUGINS {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -43,10 +59,9 @@ set shiftwidth=4
 
 "" 42-HEADER CONFIG {{{
 let $USER = 'bazuara'
-let $MAIL = $USER . '@student.42madrid.com'
+let $MAIL = $USER . '@student.42madrid.'
 "" }}}
 
 if expand('%:t') == ".vimrc"
 	set foldmethod=marker
 endif
-
