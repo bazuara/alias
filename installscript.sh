@@ -6,7 +6,7 @@
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/04/09 02:52:46 by bazuara          ###   ########.fr        #
+#    Updated: 2020/04/17 03:05:56 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -17,6 +17,9 @@ read -p ""
 ln ./sources/.vimrc ~/.vimrc
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# Install skelleton templates
+mkdir ~/.vim/templates
+ln ./sources/vimtemplates/* ~/.vim/templates
 # instalar oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # instalar tema over10k

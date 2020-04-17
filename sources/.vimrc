@@ -62,6 +62,13 @@ let $USER = 'bazuara'
 let $MAIL = $USER . '@student.42madrid.'
 "" }}}
 
+"" Inserts
+function! C42comment()
+	r~/.vim/templates/C42comment
+endfunction
+:command Cc42 call C42comment() 
+
+
 if expand('%:t') == ".vimrc"
 	set foldmethod=marker
 endif
