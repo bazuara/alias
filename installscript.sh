@@ -6,13 +6,15 @@
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/04/17 03:05:56 by bazuara          ###   ########.fr        #
+#    Updated: 2020/04/18 17:32:25 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
 cat ./sources/ascii.art
 # press a key to continue
 read -p ""
+# Install updated vim via brew
+brew install vim -- --with-override-system-vi
 # install vim preferences
 ln ./sources/.vimrc ~/.vimrc
 mkdir -p ~/.vim/bundle
