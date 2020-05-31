@@ -28,7 +28,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'valloric/youcompleteme'
 Plugin 'pandark/42header.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,6 +38,7 @@ filetype plugin indent on    " required
 syntax on
 set number
 set hlsearch
+set backspace=indent,eol,start
 "" }}}
 
 "" COLLAPSIBLE CODE {{{
