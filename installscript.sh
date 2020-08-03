@@ -6,7 +6,7 @@
 #    By: bazuara <bazuara@student.42madrid.>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/28 18:48:25 by bazuara           #+#    #+#              #
-#    Updated: 2020/01/29 14:58:20 by bazuara          ###   ########.fr        #
+#    Updated: 2020/08/03 09:51:51 by bazuara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -15,6 +15,8 @@ cat ./sources/ascii.art
 read -p ""
 # install vim preferences
 ln ./sources/.vimrc ~/.vimrc
+# copy vim skelletons
+cp -r ./sources/skeletons ~/.vim/skeletons
 # instalar oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # instalar tema over10k
