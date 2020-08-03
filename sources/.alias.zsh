@@ -10,6 +10,7 @@ alias cd42='cd ~/Documents/42/Ecole/ft_printf/bazuara'
 alias cdtool='cd ~/Documents/42/Tools/'
 alias mygit='git --git-dir=.github'
 alias mygaut=" mygit add . && mygit commit  && mygit push"
+alias cleanitunes='rm -rf ~/Library/Caches/com.apple.iTunes/SubscriptionPlayCache'
 function mkcd() { mkdir -p "$@" && cd "$@"; }
 #End of Custom Alias
 
