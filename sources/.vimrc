@@ -48,6 +48,7 @@ function! C42comment()
 	r~/.vim/skeletons/42comment
 endfunction
 :command Cc42 call C42comment() 
+:command HumanJson execute "%!python -m json.tool"
 "" }}}
 
 if expand('%:t') == ".vimrc"
