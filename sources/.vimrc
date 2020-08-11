@@ -47,10 +47,17 @@ let $MAIL = $USER . '@student.42madrid.'
 function! C42comment()
 	r~/.vim/skeletons/42comment
 endfunction
-:command Cc42 call C42comment() 
-:command HumanJson execute "%!python -m json.tool"
+:command Skel42comment call C42comment() 
 "" }}}
 
+function! SkelMakefile()
+	r~/.vim/skeletons/makefile.skel
+endfunction
+:command SkelMf call SkelMakefile() 
+
+"" Handy commands {{{
+:command HumanJson execute "%!python -m json.tool"
+"" }}}
 if expand('%:t') == ".vimrc"
 	set foldmethod=marker
 endif
