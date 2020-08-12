@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/aykot/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [user]
 	name = Bruno Azuara
 	email = bruno.azuara@gmail.com

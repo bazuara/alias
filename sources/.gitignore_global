@@ -1,5 +1,10 @@
 .DS_Store
 *.swp
 *.swo
-*.out 
+*.out
+*.out.*
 *.o
+.git
+.github
+*.abc
+
