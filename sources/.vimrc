@@ -14,26 +14,6 @@
 "        'V/'   ++++++
 "                 ++
 
-"" PLUGINS {{{
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'pandark/42header.vim'
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-"" }}}
-
 "" VISUAL SETTINGS {{{
 syntax on
 set number
@@ -63,13 +43,21 @@ let $USER = 'bazuara'
 let $MAIL = $USER . '@student.42madrid.'
 "" }}}
 
-"" Inserts
+"" Inserts {{{
 function! C42comment()
-	r~/.vim/templates/C42comment
+	r~/.vim/skeletons/42comment
 endfunction
-:command Cc42 call C42comment() 
+:command Skel42comment call C42comment() 
+"" }}}
 
+function! SkelMakefile()
+	r~/.vim/skeletons/makefile.skel
+endfunction
+:command SkelMf call SkelMakefile() 
 
+"" Handy commands {{{
+:command HumanJson execute "%!python -m json.tool"
+"" }}}
 if expand('%:t') == ".vimrc"
 	set foldmethod=marker
 endif
