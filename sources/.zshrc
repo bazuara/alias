@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+neofetch
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -70,7 +70,7 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions docker	colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
