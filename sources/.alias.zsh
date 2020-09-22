@@ -11,6 +11,8 @@ alias cdtool='cd ~/Documents/42/Tools/'
 alias mygit='git --git-dir=.github'
 alias mygaut=" mygit add . && mygit commit  && mygit push"
 alias cleanitunes='rm -rf ~/Library/Caches/com.apple.iTunes/SubscriptionPlayCache'
+alias gpa='git remote | xargs -L1 -I R git push R master'
+alias gpab='git remote | xargs -L1 git push --all'
 function mkcd() { mkdir -p "$@" && cd "$@"; }
 #End of Custom Alias
 
