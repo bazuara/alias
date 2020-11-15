@@ -27,6 +27,8 @@ ln ./sources/.alias.zsh ~/.oh-my-zsh/custom/alias.zsh
 ln ./sources/.zshrc ~/.zshrc
 # plugins ohmyzsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# intall vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # configura ignore global
 ln ./sources/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
@@ -35,13 +37,13 @@ ln -s ./sources/.gitconfig ~/.gitconfig
 # Instala las fuentes
 cp ./sources/font/*.ttf ~/Library/Fonts
 # Cambia el desplazamiento del raton a no natural
-defaults write ~/Library/Preferences/.GlobalPreferences.plist com.apple.swipescrolldirection -boolean NO
+#defaults write ~/Library/Preferences/.GlobalPreferences.plist com.apple.swipescrolldirection -boolean NO
 # instala preferencia de iTerm2
 defaults delete com.googlecode.iterm2
 rm ~/Library/Preferences/com.googlecode.iterm2.plist
 ln ./sources/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 defaults read -app iTerm > /dev/null
 # set wallpaper
-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/bazuara/.custom/alias/sources/metropolis.png"'
+#osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/bazuara/.custom/alias/sources/metropolis.png"'
 echo "No te olvides de reiniciar el terminal para aplicar todos los cambios"
 exit 0

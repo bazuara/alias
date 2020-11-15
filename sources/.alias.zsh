@@ -14,6 +14,5 @@ alias cleanitunes='rm -rf ~/Library/Caches/com.apple.iTunes/SubscriptionPlayCach
 alias gpa='git remote | xargs -L1 -I R git push R master'
 alias gpab='git remote | xargs -L1 git push --all'
 function mkcd() { mkdir -p "$@" && cd "$@"; }
+alias norminette="~/.norminette/norminette.rb"
 #End of Custom Alias
-
-
