@@ -19,6 +19,8 @@ syntax on
 set number
 set hlsearch
 set backspace=indent,eol,start
+let g:molokai_original = 1
+colorscheme molokai
 "" }}}
 
 "" COLLAPSIBLE CODE {{{
@@ -266,8 +268,9 @@ endfunction
 :command HumanJson execute "%!python -m json.tool"
 "" }}}
 
-"" VIMRC TIDI-UP {{{
+"" VIMRC TIDY-UP {{{
 if expand('%:t') == ".vimrc"
 	set foldmethod=marker
 endif
 "" }}}
+

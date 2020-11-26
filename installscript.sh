@@ -29,6 +29,10 @@ ln ./sources/.zshrc ~/.zshrc
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # intall vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# create color folder
+mkdir -p ~/.vim/colors
+# link color scheme
+ln ./sources/molokai.vim ~/.vim/colors/molokai.vim
 # configura ignore global
 ln ./sources/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
