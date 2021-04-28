@@ -14,5 +14,9 @@ alias cleanitunes='rm -rf ~/Library/Caches/com.apple.iTunes/SubscriptionPlayCach
 alias gpa='git remote | xargs -L1 -I R git push R master'
 alias gpab='git remote | xargs -L1 git push --all'
 function mkcd() { mkdir -p "$@" && cd "$@"; }
-alias norminette="~/.norminette/norminette.rb"
+alias test_server='python -m SimpleHTTPServer'
+alias dcu="docker-compose up -d"
+alias dcd="docker-compose down"
+alias dpsa="docker ps -a"
+alias dspa="docker system prune --all"
 #End of Custom Alias
